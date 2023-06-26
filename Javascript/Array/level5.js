@@ -30,6 +30,16 @@ console.log(uniq)
 
 const newArr = [[4,5], [5,7], [7,2]]
 //calculate the sum of all the odd numbers inside this nested array
+//solution
+let add = 0
+const a = newArr.map((item)=>{
+  item.map((element)=>{
+    if(element % 2 !== 0){
+      add += element
+    }
+  })
+})
+console.log(add)
 
 const myDetails = [
     {id:3, name: 'hari'},
@@ -38,7 +48,10 @@ const myDetails = [
   ]
   
 // return only array of ids: expected output  [3,5,6]
-
+//solution
+myDetails.map((item)=>{
+  return item.id
+})
 
 const userDetails= [
     {score: 0, name:'hari', marks: [10,3,23]},

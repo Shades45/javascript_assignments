@@ -12,6 +12,7 @@ allUsers.includes(name)
 const user= 'hari'
 const userArr = ['hari','shyam','hari','thakur']
 //solution
+let sum = 0
 userArr.map((item)=> {
     if(item.includes(user)){
       return sum++
