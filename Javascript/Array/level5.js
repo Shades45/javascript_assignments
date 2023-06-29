@@ -59,6 +59,14 @@ const userDetails= [
     {score: 0, name:'shyam',marks: [20,13,43]},
 ]
 //loop over the arr of objects and calculate total score, expected output is:
+//solution
+userDetails.map((item)=>{
+  const a = item.marks.reduce((accumulator, nextvalue)=>{
+    return accumulator + nextvalue
+  })
+  return item.score = a
+})
+console.log(userDetails)
 
 // [
 //     {score: 36, name:'hari', marks: [10,3,23]},
