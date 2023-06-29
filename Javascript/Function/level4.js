@@ -25,12 +25,17 @@ const status1 ={
 const status2 ={
     status: 'success'
 }
-const checkIfSucces=()=>{
-//write your code here
-}
-
-checkIfSucces(status1)  //should return false
-
-checkIfSucces(status2)  //should return true
+//solution
+const checkIfSucces = (item) => {
+    if (item.status === 'success'){
+      return true
+    }else{
+      return false
+    }
+  }
+  checkIfSucces(status1) //should return false
+  
+  checkIfSucces(status2)  //should retturn true
+  
 
 
