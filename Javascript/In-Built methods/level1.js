@@ -1,4 +1,5 @@
 // write a code that generates random number from 1 to 5
+//solution
 const random = (min, max) =>{
     min = Math.ceil(min)
     max = Math.floor(max)
